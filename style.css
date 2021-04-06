@@ -1,0 +1,32 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    height: 70px;
+}
+
+.popup {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    padding: 3rem;
+    border: 2px solid var(--popup-border);
+    border-radius: 10px;
+    background-color: var(--popup);
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background-color: #cff0cc;
+}
+
+.popup-active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.new-book{
+    float: right;
+    margin: 1rem;
+}
